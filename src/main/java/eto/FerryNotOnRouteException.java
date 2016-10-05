@@ -1,10 +1,11 @@
 package eto;
 
-/**
- * Created by Skroget on 05/10/16.
- */
 public class FerryNotOnRouteException extends Exception{
 
+    /**
+     * Thrown when trying to remove a ferry from a route where the ferry isn't added
+     * @param message
+     */
     public FerryNotOnRouteException(String message){
         super(message);
     }

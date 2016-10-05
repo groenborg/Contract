@@ -1,10 +1,11 @@
 package eto;
 
-/**
- * Created by Skroget on 05/10/16.
- */
 public class FerryLineNotFoundException extends Exception {
 
+    /**
+     * When FerryLine doesn't exist
+     * @param message
+     */
     public FerryLineNotFoundException(String message){
         super(message);
     }

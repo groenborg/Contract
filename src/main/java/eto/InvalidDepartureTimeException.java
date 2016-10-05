@@ -1,10 +1,11 @@
 package eto;
 
-/**
- * Created by Skroget on 05/10/16.
- */
 public class InvalidDepartureTimeException extends Exception {
 
+    /**
+     * When DepartureTime is invalid
+     * @param message
+     */
     public InvalidDepartureTimeException(String message){
         super(message);
     }

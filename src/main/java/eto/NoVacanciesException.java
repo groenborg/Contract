@@ -5,7 +5,12 @@ package eto;
  */
 public class NoVacanciesException extends Exception {
 
+    /**
+     * No available reservation slots
+     * @param message
+     */
     public NoVacanciesException(String message) {
+
         super(message);
     }
 

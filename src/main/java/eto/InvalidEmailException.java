@@ -5,6 +5,10 @@ package eto;
  */
 public class InvalidEmailException extends Exception{
 
+    /**
+     * Invalid email format submitted
+     * @param message
+     */
     public InvalidEmailException(String message){
         super(message);
     }

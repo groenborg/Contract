@@ -5,6 +5,10 @@ package eto;
  */
 public class InvalidRouteException extends Exception{
 
+    /**
+     * When trying to add a ferry to a non existing ferryline
+     * @param message
+     */
     public InvalidRouteException(String message) {
         super(message);
     }

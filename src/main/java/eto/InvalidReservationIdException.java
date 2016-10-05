@@ -5,6 +5,10 @@ package eto;
  */
 public class InvalidReservationIdException extends Exception {
 
+    /**
+     * Wrong ReservationID format
+     * @param message
+     */
     public InvalidReservationIdException(String message){
         super(message);
     }

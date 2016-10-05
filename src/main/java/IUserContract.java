@@ -1,6 +1,9 @@
 /**
  * Created by geera on 05-Oct-16.
  */
+import eto.*;
+import contract.*;
+import java.util.*;
 public interface IUserContract
 {
     /**
@@ -22,10 +25,10 @@ public interface IUserContract
      * @param vehiclePassengers number of passengers in vehicle including reserver
      * @param walkOns number of walkon passengers on besides passengers in vehicle, if any
      * @return Returns the reservation and info.
-     * @throws NoVacansiesException
+     * @throws NoVacanciesException
      * @throws InvalidDateException
      */
-    ReservationInfo CreateReservation(PersonInfo personInfo, FerryLineInfo ferryLineInfo, DepartureTimes departureTimes, Vehicle vehicle, Number vehiclePassengers, Number walkOns) throws NoVacansiesException, InvalidDateException;
+    Reservation CreateReservation(PersonInfo personInfo, FerryLineInfo ferryLineInfo, DepartureTime departureTimes, Vehicle vehicle, Number vehiclePassengers, Number walkOns) throws NoVacanciesException, InvalidDateException;
 
     /**
      *

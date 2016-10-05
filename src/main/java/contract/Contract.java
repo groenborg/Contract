@@ -48,11 +48,11 @@ public interface Contract {
 //  Get Objects:
 
     /**
-     * Should return a Person that has a matching email as the parameter.
+     * Should return a PersonInfo that has a matching email as the parameter.
      * @param email
-     * @return Person
+     * @return PersonInfo
      */
-    public Person getPerson(String email);
+    public PersonInfo getPerson(String email);
 
     /**
      * Should return a Ticket that has a matching id as the parameter.
@@ -90,7 +90,7 @@ public interface Contract {
     public String createFerry(String name, boolean docked_state, boolean lent_state, String shipSize);
 
     /**
-     * Should add a Person, and return the id of the added person.
+     * Should add a PersonInfo, and return the id of the added person.
      * @param name
      * @param address
      * @param email
@@ -141,8 +141,8 @@ public interface Contract {
     public String deleteFerry(String ferry_id);
 
     /**
-     * Should delete the Person with the given email, and return the email of the
-     * deleted Person
+     * Should delete the PersonInfo with the given email, and return the email of the
+ deleted PersonInfo
      * @param email
      * @return String
      */

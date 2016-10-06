@@ -32,4 +32,5 @@ public class FerryConfig {
     public int getMachineLimit() {
         return machineLimit;
     }
-    
+
+}

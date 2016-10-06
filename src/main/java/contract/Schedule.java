@@ -22,5 +22,6 @@ public class Schedule {
     public Collection<DepartureTime> getDepartureTimes() {
         return departureTimes;
     }
-    
-    
+
+
+}

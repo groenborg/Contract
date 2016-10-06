@@ -20,10 +20,7 @@ public class FerryLineInfo {
         return startDestination;
     }
 
-    public String getEndDestination() {
-        return endDestination;
-    }
-
+}
     
 
 

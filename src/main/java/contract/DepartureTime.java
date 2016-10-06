@@ -15,5 +15,6 @@ public class DepartureTime {
     public Date getTime() {
         return time;
     }
-    
 
+
+}

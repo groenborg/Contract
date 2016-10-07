@@ -7,14 +7,16 @@ import java.util.*;
 public interface IUserContract
 {
     /**
-     *
+     * 
+     * @pre Still missing
      * @param date Date object with Unix Timestamp
      * @param ferryLineInfo Info about the route.
      * @return Returns a collection of DepartureTime
      * @throws InvalidDateException
      * @throws InvalidRouteException
+     * @post missing state of system
      */
-    Collection<DepartureTime> GetAllDepartures(Date date, FerryLineInfo ferryLineInfo) throws InvalidDateException, InvalidRouteException;
+    Collection<DepartureTime> getAllDepartures(Date date, FerryLineInfo ferryLineInfo) throws InvalidDateException, InvalidRouteException;
 
     /**
      *
@@ -23,12 +25,12 @@ public interface IUserContract
      * @param departureTimes info about departure time
      * @param vehicle info about vehicle size
      * @param vehiclePassengers number of passengers in vehicle including reserver
-     * @param walkOns number of walkon passengers on besides passengers in vehicle, if any
+     * @param walkOns number of walk on passengers on besides passengers in vehicle, if any
      * @return Returns the reservation and info.
      * @throws NoVacanciesException
      * @throws InvalidDateException
      */
-    Reservation CreateReservation(PersonInfo personInfo, FerryLineInfo ferryLineInfo, DepartureTime departureTimes, Vehicle vehicle, Number vehiclePassengers, Number walkOns) throws NoVacanciesException, InvalidDateException;
+    Reservation createReservation(PersonInfo personInfo, FerryLineInfo ferryLineInfo, DepartureTime departureTimes, Vehicle vehicle, Number vehiclePassengers, Number walkOns) throws NoVacanciesException, InvalidDateException;
 
     /**
      *
@@ -39,7 +41,7 @@ public interface IUserContract
      * @throws InvalidEmailException
      * @throws InvalidReservationException
      */
-    Number DeleteReservation(Number reservationId, String email) throws InvalidReservationIdException, InvalidEmailException, InvalidReservationException;
+    Number deleteReservation(Number reservationId, String email) throws InvalidReservationIdException, InvalidEmailException, InvalidReservationException;
 
     /**
      *

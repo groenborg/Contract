@@ -10,14 +10,33 @@ package contract;
  * @author Uffe
  */
 public class Vehicle {
-    String vehicleType;
-
-    public Vehicle(String vehicleType) {
+    
+    VehicleType vehicleType;
+    Number height;
+    Number length;
+    Number limit;
+    
+    public Vehicle(VehicleType vehicleType, Number vehicleHeight, Number vehicleLength, Number limit) {
         this.vehicleType = vehicleType;
+        this.height = vehicleHeight;
+        this.length = vehicleLength;
+        this.limit = limit;
     }
 
-    public String getVehicleType() {
+    public VehicleType getVehicleType() {
         return vehicleType;
+    }
+
+    public Number getHeight() {
+        return height;
+    }
+
+    public Number getLength() {
+        return length;
+    }
+
+    public Number getLimit() {
+        return limit;
     }
 
     

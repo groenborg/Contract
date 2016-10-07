@@ -7,6 +7,40 @@
     <groupId>ScooterHundt</groupId>
     <artifactId>group4</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <doclet>ch.raffael.doclets.pegdown.PegdownDoclet</doclet>
+                    <docletArtifact>
+                        <groupId>ch.raffael.pegdown-doclet</groupId>
+                        <artifactId>pegdown-doclet</artifactId>
+                        <version>1.1</version>
+                    </docletArtifact>
+                    <useStandardDocletOptions>true</useStandardDocletOptions>
+                    <tags>
+                        <tag>
+                            <name>pre</name>
+                            <placement>a</placement>
+                            <head>Preconditions:</head>
+                        </tag>
+                        <tag>
+                            <name>post</name>
+                            <placement>a</placement>
+                            <head>Postconditions:</head>
+                        </tag>
+                    </tags>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.jmock</groupId>
+            <artifactId>jmock-junit4</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+    </dependencies>
 </project>

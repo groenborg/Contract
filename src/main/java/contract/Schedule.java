@@ -15,10 +15,18 @@ public class Schedule {
         this.departureTimes = departureTimes;
     }
 
+    /**
+     * returns the date of the schedule
+     * @return 
+     */
     public Date getDate() {
         return date;
     }
 
+    /**
+     * Returns a list of departureTimes for the specific schedule
+     * @return 
+     */
     public Collection<DepartureTime> getDepartureTimes() {
         return departureTimes;
     }

@@ -3,9 +3,7 @@ package contract;
 import java.util.Collection;
 import java.util.Date;
 
-/**
- * @author Uffe
- */
+
 public class Schedule {
     Date date;
     Collection<DepartureTime> departureTimes;
@@ -24,7 +22,7 @@ public class Schedule {
     }
 
     /**
-     * Returns a list of departureTimes for the specific schedule
+     * Returns a list of departureTimes for the specific schedules
      * @return 
      */
     public Collection<DepartureTime> getDepartureTimes() {

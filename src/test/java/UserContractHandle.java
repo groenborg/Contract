@@ -1,7 +1,7 @@
-/**
- *
- * @author Robert Elving
- */
+
 public class UserContractHandle {
 
+    public static IUserContract contract;
+    
+    
 }

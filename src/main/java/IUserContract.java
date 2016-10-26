@@ -19,7 +19,7 @@ public interface IUserContract
     Collection<DepartureTime> getAllDepartures(Date date, FerryLineInfo ferryLineInfo) throws InvalidDateException, InvalidRouteException;
 
     /**
-     *
+     * pre post
      * @param personInfo info about reserving person.
      * @param ferryLineInfo info about route
      * @param departureTimes info about departure time

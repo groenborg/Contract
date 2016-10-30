@@ -5,7 +5,7 @@ import eto.*;
 import java.util.Collection;
 import java.util.Date;
 
-public interface AdminstratorContract {
+public interface AdministratorContract {
 
     /***
      * Find a schedule for a specific ferryLine - Creates if none found

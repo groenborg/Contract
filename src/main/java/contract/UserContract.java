@@ -17,7 +17,7 @@ public interface UserContract {
      * @pre Still missing
      * @post missing state of system
      */
-    Collection<DepartureTime> getAllDepartures(Date date, FerryLineInfo ferryLineInfo) throws InvalidDateException, InvalidRouteException;
+    public Collection<DepartureTime> getAllDepartures(Date date, FerryLineInfo ferryLineInfo) throws InvalidDateException, InvalidRouteException;
 
     /**
      * Create A reservatiom
@@ -32,7 +32,7 @@ public interface UserContract {
      * @throws NoVacanciesException
      * @throws InvalidDateException
      */
-    Reservation createReservation(PersonInfo personInfo, FerryLineInfo ferryLineInfo, DepartureTime departureTimes, Vehicle vehicle, Number vehiclePassengers, Number walkOns) throws NoVacanciesException, InvalidDateException;
+    public Reservation createReservation(PersonInfo personInfo, FerryLineInfo ferryLineInfo, DepartureTime departureTimes, Vehicle vehicle, Number vehiclePassengers, Number walkOns) throws NoVacanciesException, InvalidDateException;
 
     /**
      * Delete a reservation
@@ -44,7 +44,7 @@ public interface UserContract {
      * @throws InvalidEmailException         eto
      * @throws InvalidReservationException   eto
      */
-    Number deleteReservation(Number reservationId, String email) throws InvalidReservationIdException, InvalidEmailException, InvalidReservationException;
+    public Number deleteReservation(Number reservationId, String email) throws InvalidReservationIdException, InvalidEmailException, InvalidReservationException;
 
     /**
      * View a reservation
@@ -56,6 +56,6 @@ public interface UserContract {
      * @throws InvalidEmailException         eto
      * @throws InvalidReservationException   eto
      */
-    Reservation ViewReservation(Number reservationId, String email) throws InvalidReservationIdException, InvalidEmailException, InvalidReservationException;
+    public Reservation ViewReservation(Number reservationId, String email) throws InvalidReservationIdException, InvalidEmailException, InvalidReservationException;
 
 }

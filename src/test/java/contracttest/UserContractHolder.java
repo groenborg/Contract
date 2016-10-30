@@ -1,8 +1,10 @@
+package contracttest;
+
 import contract.UserContract;
 
-public class UserContractHandle {
+public class UserContractHolder {
 
     public static UserContract contract;
-    
-    
+
+
 }

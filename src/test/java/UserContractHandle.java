@@ -1,7 +1,8 @@
+import contract.UserContract;
 
 public class UserContractHandle {
 
-    public static IUserContract contract;
+    public static UserContract contract;
     
     
 }

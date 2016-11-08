@@ -26,6 +26,8 @@
 .idea/gradle.xml
 .idea/libraries
 
+group4.iml
+
 # Mongo Explorer plugin:
 .idea/mongoSettings.xml
 
@@ -54,7 +56,7 @@ fabric.properties
 
 # *.iml
 # modules.xml
-# .idea/misc.xml 
+# .idea/misc.xml
 # *.ipr
 
 

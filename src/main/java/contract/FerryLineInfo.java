@@ -8,7 +8,8 @@ import java.util.Collection;
 public class FerryLineInfo {
     String startDestination;
     String endDestination;
-    Collection<Ferry> ferries;
+    Collection<Schedule> schedules;
+    
 
 
     public FerryLineInfo(String startDestination, String endDestination) {
